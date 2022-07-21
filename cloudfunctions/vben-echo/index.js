@@ -1,4 +1,4 @@
-const cloud = require("@cloudbase/node-sdk");
+const cloud = require('@cloudbase/node-sdk');
 
 exports.main = async (event, context) => {
   const app = cloud.init({
@@ -9,5 +9,7 @@ exports.main = async (event, context) => {
   // your code here
   return {
     event,
+    app,
+    context,
   };
 };

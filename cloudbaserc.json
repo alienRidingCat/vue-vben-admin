@@ -9,8 +9,8 @@
       "client": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
-          "buildCommand": "npm run build",
-          "outputPath": "dist",
+          "buildCommand": "pnpm run build",
+          "outputPath": "vben",
           "cloudPath": "/vben",
           "envVariables": {
             "VUE_APP_ENV_ID": "{{env.ENV_ID}}"
@@ -23,7 +23,7 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "vue-echo",
+              "name": "vben-echo",
               "timeout": 5,
               "envVariables": {},
               "runtime": "Nodejs12.16",
